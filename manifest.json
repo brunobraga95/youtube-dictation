@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Language learning Youtube dictation",
+  "version": "1.1",
+  "description": "Allows language learners to use Youtube videos to dictate senteces and improve their understanding skills.",
+  "permissions": ["sidePanel", "storage"],
+  "host_permissions": ["https://www.youtube.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "icons": {
+    "16": "dictation16.png",
+    "48": "dictation48.png",
+    "128": "dictation128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+.dictation-container {
+  font-family: sans-serif;
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.dictation-title {
+  margin-bottom: 10px;
+  font-size: 24px; /* was 1.5em */
+  text-align: center;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #eee;
+  border-radius: 4px;
+  height: 12px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  background-color: #4caf50;
+  height: 100%;
+  transition: width 0.3s;
+}
+
+.sentence-display {
+  font-size: 19px; /* was 1.2em */
+  line-height: 30px; /* was 1.6 line-height over 19px */
+  word-wrap: break-word;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.word-wrapper {
+  margin-right: 8px;
+  margin-bottom: 4px;
+  position: relative;
+  min-width: 8px; /* replaced 1ch (roughly one character width) with ~8px */
+}
+
+.almost-correct-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.almost-correct-word {
+  font-size: 11px; /* was 0.7em over base ~16px */
+  color: red;
+  position: absolute;
+  top: -19px; /* was -1.2em over ~16px */
+  left: 0;
+  width: 100%;
+  text-align: center;
+  word-break: break-word;
+}
+
+.hovered-word {
+  color: #aaa;
+}
+
+.dictation-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px; /* was 1em */
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.bottom-buttons-wrapper {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.action-buttons-wrapper {
+  display: flex;
+  gap: 5px;
+}
+
+/* Next button */
+.next-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    opacity 0.3s;
+}
+
+.next-button:hover {
+  background-color: #45a049;
+}
+
+.next-button:active {
+  background-color: #3e9141;
+}
+
+.next-button-disabled {
+  background-color: #a5d6a7;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.skip-button {
+  background-color: #ccc;
+  color: black;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    opacity 0.3s;
+}
+
+.copy-to-clipboard-button {
+  background: none;
+  display: block;
+  position: relative;
+  border: none;
+  margin-left: auto;
+  color: black;
+  bottom: 8px;
+  cursor: pointer;
+}
+
+.copy-to-clipboard-button:active {
+  color: grey;
+}

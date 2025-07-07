@@ -1,0 +1,17 @@
+.title {
+  font-size: 24px;
+  text-align: center;
+  position: relative;
+  top: 20px;
+}
+
+.settings-and-feedback-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.body-without-rendered-sentence {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

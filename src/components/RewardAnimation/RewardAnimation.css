@@ -1,0 +1,53 @@
+.reward-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fox-animation {
+  text-align: center;
+  animation: fadeInOut 3s ease-in-out;
+}
+
+.fox-image {
+  width: 150px;
+  animation: waveFox 1s ease-in-out infinite alternate;
+}
+
+.well-done-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4caf50;
+  margin-top: 10px;
+}
+
+@keyframes waveFox {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,15 @@
+.reload-button {
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  padding: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+.reload-button:hover {
+  transform: rotate(90deg);
+}

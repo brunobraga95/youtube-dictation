@@ -1,0 +1,12 @@
+.gif-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.gif-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
