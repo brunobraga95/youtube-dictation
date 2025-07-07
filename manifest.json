@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Language learning Youtube dictation",
   "version": "1.1",
-  "description": "Allows language learners to use Youtube videos to dictate senteces and improve their understanding skills.",
+  "description": "Allows language learners to use Youtube videos to dictate senteces and improve their listening and writing skills.",
   "permissions": ["sidePanel", "storage"],
   "host_permissions": ["https://www.youtube.com/*"],
   "background": {
